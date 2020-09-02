@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi slider component</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <div id="app" class="multi-slider-compoent">
+        {{ message }}
+
+        <div v-for="item in donationList">
+            <p>{{item.title}}</p>
+            <p class="control">
+                <input type="range" id="vol" name="vol" min="0" max="125" v-model="item.amount">
+                <span class="amount-to-pay">
+                    {{ item.amount }}
+                </span>
+            </p>
+            <p class="description">
+                {{ item.content }}
+            </p>
+        </div>
+
+        <div class="summary">
+            <img src="" alt="PriceIcon" srcset="">
+            The same price as {{ total }}
+            
+        </div>
+    </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

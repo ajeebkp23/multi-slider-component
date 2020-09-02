@@ -1,0 +1,16 @@
+span.amount-to-pay
+{
+    display: inline-flex;
+    border: 1px solid #ccc;
+    padding: 1em 1rem;
+    width: 40px;
+    align-content: center;
+    box-sizing: content-box;
+}
+p.control
+{
+    padding: 1rem;
+}
+.multi-slider-compoent{
+    width: 400px;
+}
